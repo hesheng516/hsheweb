@@ -11,7 +11,7 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String index() {
-		return "Hello World";
+		return "这是我的第一个git项目";
 	}
 
 	public static void main(String[] args) {
