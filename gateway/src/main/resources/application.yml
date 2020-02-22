@@ -1,0 +1,17 @@
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8888/eureka/
+server:
+   port: 8769
+spring:
+   application:
+      name: gateway
+zuul:
+   routes:
+      api-a:
+         path: /sysman/**
+         service-id: sysman
+      api-b:
+         path: /sysmanger/**
+         service-id: sysmanger
